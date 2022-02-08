@@ -1,0 +1,129 @@
+/*reset and box sizing*/
+*{
+	box-sizing: border-box;
+	margin:  0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+	margin: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*create background div then push text down with paragraph element*/
+div.back_ground{
+	position: relative; 
+	/*for div_title to be absolute to it*/
+	background-color: gray;
+	border: black solid 1px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*create background div then adjust with margin left right with paragraph element*/
+/*make div_title absolute to div_background so it moves according to window size*/
+div.menu_div{
+	position: absolute;
+	border:  black solid 1px;
+	/*better visually*/
+	right: -1px; 
+	top: -1px;
+	width: 40%;
+}
+
+/*add text to menu div*/
+p.menu_title{
+	/*border: black solid 2px;*/
+	font-size: 25px;
+	text-align: center;
+	margin: 5px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+div.name1{
+	background-color: pink;
+}
+div.name2{
+	background-color: palegreen;
+}
+div.name3{
+	background-color: skyblue;
+}
+
+/*add text to background div*/
+p.para{
+	/*border: black solid 2px;*/
+	width: 80%;
+	margin-left: 10px;
+	margin-right: auto;
+	margin-top: 45px;
+	margin-bottom: 10px;
+	font-familt: Times;
+}
+
+.row{
+	width: 100%;
+}
+
+/*media queries*/
+
+/*large device*/
+@media(min-width: 992px){
+	.class-s-1,.class-s-2,.class-s-3,.clss-md-1,.clss-md-2,.clss-md-3,.class-lg-1,.class-lg-2,.class-lg-3{
+		float: left;
+	}
+
+	.class-lg-1{
+		width: 33.33%;
+	}
+
+	.class-lg-2{
+		width: 50%;
+	}
+
+	.class-lg-3{
+		width: 100%;
+	}
+}
+
+/*medium device*/
+@media(max-width: 991px) and (min-width: 768px){
+	.class-s-1,.class-s-2,.class-s-3,.clss-md-1,.clss-md-2,.clss-md-3,.class-lg-1,.class-lg-2,.class-lg-3{
+		float: left;
+	}
+
+	..class-md-1{
+		width: 33.33%;
+	}
+
+	.class-md-2{
+		width: 50%;
+	}
+
+	.class-md-3{
+		width: 100%;
+	}
+}
+
+/*small device*/
+@media(max-width: 767px){
+	.class-s-1,.class-s-2,.class-s-3,.clss-md-1,.clss-md-2,.clss-md-3,.class-lg-1,.class-lg-2,.class-lg-3{
+		float: left;
+	}
+
+	.class-s-1{
+		width: 33.33%;
+	}
+
+	.class-s-2{
+		width: 50%;
+	}
+
+	.class-s-3{
+		width: 100%;
+	}
+}	
